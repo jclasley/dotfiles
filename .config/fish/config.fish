@@ -4,10 +4,6 @@ function update-config
     source $HOME/.config/fish/config.fish
 end
 
-function config
-    emacsclient -c -nw ~/.config/fish/config.fish
-end
-
 # miscellaneous scripts
 source $HOME/.fish/scripts/misc.fish
 # abbreviations

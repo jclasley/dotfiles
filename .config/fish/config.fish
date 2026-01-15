@@ -5,12 +5,19 @@ function update-config
 end
 
 # miscellaneous scripts
-source $HOME/.fish/scripts/misc.fish
+if test -f $HOME/.fish/scripts/misc.fish
+    source $HOME/.fish/scripts/misc.fish
+end
+
 # abbreviations
-source $HOME/.fish/abbrs.fish
+if test -f $HOME/.fish/abbrs.fish
+    source $HOME/.fish/abbrs.fish
+end
 
 # rust
-source "$HOME/.cargo/env.fish" # For fish
+if test -f "$HOME/.cargo/env.fish" # For fish
+    source "$HOME/.cargo/env.fish" # For fish
+end
 
 function idea
     open -na "/Applications/GoLand.app" --args $argv

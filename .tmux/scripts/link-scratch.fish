@@ -10,7 +10,7 @@ end
 
 # if window is not found, create it
 if test $found -eq 0
-    tmux new-window -c ~/j1 -n scratch -t 0 -b 'nvim ~/j1'
+    tmux new-window -c $HOME -n scratch -t 0 -b nvim
     return 0
 end
 

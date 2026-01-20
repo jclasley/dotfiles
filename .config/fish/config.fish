@@ -4,16 +4,6 @@ function update-config
     source $HOME/.config/fish/config.fish
 end
 
-# miscellaneous scripts
-if test -f $HOME/.fish/scripts/misc.fish
-    source $HOME/.fish/scripts/misc.fish
-end
-
-# abbreviations
-if test -f $HOME/.fish/abbrs.fish
-    source $HOME/.fish/abbrs.fish
-end
-
 # rust
 if test -f "$HOME/.cargo/env.fish" # For fish
     source "$HOME/.cargo/env.fish" # For fish
@@ -55,11 +45,12 @@ function gifit
         -loop 0 $output
 end
 
-for f in ~/.fish/scripts/*.fish
+for f in ~/.fish/**/*.fish
     source $f
 end
 
-alias claude="/Users/jonlasley/.claude/local/claude"
+export VISUAL=nvim
+export EDITOR=nvim
 
 abbr -a dc 'docker compose'
 
@@ -73,3 +64,5 @@ source ~/.config/fish/tmux.fish
 # alias the .cfg git for easy additions/management
 # reference here: https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+alias claude="/Users/jonlasley/.claude/local/claude"

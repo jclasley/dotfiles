@@ -48,6 +48,9 @@ end
 for f in ~/.fish/**/*.fish
     source $f
 end
+for f in ~/scripts/**/*.fish
+    source $f
+end
 
 export VISUAL=nvim
 export EDITOR=nvim
@@ -65,4 +68,13 @@ source ~/.config/fish/tmux.fish
 # reference here: https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-alias claude="/Users/jonlasley/.claude/local/claude"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+# fzf options
+eval "$(fzf --fish)"
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --inline-info --preview "bat --color=always {}"'
+
+function vf
+    nvim $(fzf)
+end

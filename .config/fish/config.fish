@@ -70,11 +70,3 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-
-# fzf options
-eval "$(fzf --fish)"
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --inline-info --preview "bat --color=always {}"'
-
-function vf
-    nvim $(fzf)
-end

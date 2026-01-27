@@ -10,7 +10,7 @@ end
 
 # if window is not found, create it
 if test $found -eq 0
-    tmux new-window -c $HOME -n scratch -t 0 -b nvim
+    tmux new-window -c $HOME -n scratch -t 0 -b 'nvim .'
     return 0
 end
 
@@ -24,9 +24,11 @@ end
 set window (string replace -r ':$' '' $window)
 set target_session (echo $window | cut -d':' -f 1)
 
-if test $target_session = $session
-    tmux display-message "Scratch already exists"
-    return 0
-end
+echo $target_session $session
 
-tmux link-window -b -s $window -t $session:0
+# if test $target_session = $session
+#     tmux display-message "Scratch already exists"
+#     return 0
+# end
+#
+# tmux link-window -b -s $window -t $session:0

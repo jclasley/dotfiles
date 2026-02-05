@@ -1,0 +1,10 @@
+{
+  "harpoon": { "branch": "harpoon2", "commit": "87b1a3506211538f460786c23f98ec63ad9af4e5" },
+  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
+  "mini.hues": { "branch": "main", "commit": "fe3e91165fd97ad0e13717d5301b608843c4ab5e" },
+  "mini.pick": { "branch": "main", "commit": "7c0a674f620ddc701903b887b2dade836b23ea79" },
+  "nvim-lspconfig": { "branch": "master", "commit": "0480b120318ec8bab27b530ffab6ee76a8c4d806" },
+  "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
+  "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },
+  "vim": { "branch": "master", "commit": "d4b0823100c702af127cba8dd5595a8f599041ec" }
+}

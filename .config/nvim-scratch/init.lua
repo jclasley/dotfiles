@@ -28,4 +28,6 @@ vim.opt.termguicolors = true
 vim.opt.guicursor = ""
 vim.opt.scrolloff = 8
 
-vim.opt.clipboard= "unnamedplus"
+vim.opt.winborder = "rounded"
+
+vim.opt.clipboard = "unnamedplus"

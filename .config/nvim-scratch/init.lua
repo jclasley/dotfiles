@@ -1,7 +1,7 @@
 require("config.lazy")
 require("keymaps")
 
-vim.cmd.colorscheme("dracula")
+-- vim.cmd.colorscheme("dracula")
 
 vim.opt.nu = true
 vim.opt.relativenumber = true

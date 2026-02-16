@@ -4,7 +4,7 @@ return {
 	keys = {
 		{ "<leader>fp", function() require("mini.pick").builtin.files({ tool = "git" }) end, desc = "Find files (git)" },
 		{ "<leader>ff", function() require("mini.pick").builtin.files() end, desc = "Find files" },
-		{ "<leader>fs", function() require("mini.pick").builtin.grep() end, desc = "Grep" },
+		{ "<leader>fs", function() require("mini.pick").builtin.grep_live() end, desc = "Grep" },
 		{
 			"<leader>bb",
 			function()

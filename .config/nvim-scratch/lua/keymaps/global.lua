@@ -17,7 +17,7 @@ vim.keymap.set('n', '<C-]>', '<C-i>', { desc = "Jump forward" })
 
 -- lsp navigation
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = "Go to definition" })
-vim.keymap.set('n', 'gt', vim.lsp.buf.type_definition, { desc = "Go to type definition" })
+vim.keymap.set('n', '<leader>gt', vim.lsp.buf.type_definition, { desc = "Go to type definition" })
 
 -- lsp error navigation
 vim.keymap.set('n', ']e', function() vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR }) end, { desc = "Next LSP error" })

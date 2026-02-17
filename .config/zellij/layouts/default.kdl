@@ -30,10 +30,10 @@ layout {
                 mode_tmux          "#[bg=#f1fa8c,fg=#282a36,bold]  TMUX #[bg=#44475a,fg=#f1fa8c]"
 
                 tab_normal              "#[bg=#44475a,fg=#6272a4]#[bg=#6272a4,fg=#f8f8f2] {name} #[bg=#44475a,fg=#6272a4]"
-                tab_normal_fullscreen   "#[bg=#44475a,fg=#6272a4]#[bg=#6272a4,fg=#f8f8f2] {name}  #[bg=#44475a,fg=#6272a4]"
+                tab_normal_fullscreen   "#[bg=#44475a,fg=#6272a4]#[bg=#6272a4,fg=#f8f8f2] {name}  #[bg=#44475a,fg=#6272a4]"
                 tab_normal_sync         "#[bg=#44475a,fg=#6272a4]#[bg=#6272a4,fg=#f8f8f2] {name}  #[bg=#44475a,fg=#6272a4]"
                 tab_active              "#[bg=#44475a,fg=#bd93f9]#[bg=#bd93f9,fg=#282a36,bold] {name} #[bg=#44475a,fg=#bd93f9]"
-                tab_active_fullscreen   "#[bg=#44475a,fg=#bd93f9]#[bg=#bd93f9,fg=#282a36,bold] {name}  #[bg=#44475a,fg=#bd93f9]"
+                tab_active_fullscreen   "#[bg=#44475a,fg=#bd93f9]#[bg=#bd93f9,fg=#282a36,bold] {name}  #[bg=#44475a,fg=#bd93f9]"
                 tab_active_sync         "#[bg=#44475a,fg=#bd93f9]#[bg=#bd93f9,fg=#282a36,bold] {name}  #[bg=#44475a,fg=#bd93f9]"
                 tab_separator           "#[bg=#44475a] "
 
